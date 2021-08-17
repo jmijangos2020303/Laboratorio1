@@ -1,30 +1,120 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <head>
-        <h1>Centro Educativo y Técnico Laboral kinal</h1>
-    </head>
+  <div class="wrapper">
 
-    <nav>
+    <!-- Banner -->
+    <div class="banner-wrapper">
+      <header>
+        <div class="header-inner">
+          <a href="#" id="logo">
+            <img src="assets/images/pics/Logo.png" alt="LogoPersonal">
 
-    </nav>
-    <main>
-        <section>
-            <p>xd</p>
-            <br>
+          </a>
 
+          <nav>
+            <a href="#" id="menu-icon">
+              <i class="fa fa-bars"></i>
+
+            </a>
+            <ul>
+              <li>
+                <a href="index.html" class="current">Inicio</a>
+              </li>
+              <li>
+                <a href="Biografia.html">biografía</a>
+              </li>
+              <li>
+                <a href="Videos.html">Vídeos Favoritos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- SLIDER -->
+      <div id="slide-wrap">
+        <section class="slider">
+          <video height="600" autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+            oncontextmenu="return false;" preload="auto" id="miVideo">
+            <source src="assets/video/Bienvenido.mp4" type="video/mp4">
+          </video>
         </section>
-    </main>
+      </div>
+    </div>
 
+
+    <!-- FOOTER -->
     <footer>
-    <p>todos los derechos reservados (C) Jose Mijangos</p>
+      <div class="banner-wrapper">
+        <div class="icon-text">
+          <div class="icon-text-icon">
+            <ul class="footer-nav">
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="Biografia.html">biografía</a>
+              </li>
+              <li>
+                <a href="Videos.html">Vídeos Favoritos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="icon-text-text">
+            <ul class="social">
+              <li>
+                <a href="mailto:josefloo555@gmail.com">
+                  <img src="assets/images/pics/Gmail-Logo.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/jose.mijangos.50309/">
+                  <img src="assets/images/pics/facebook.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCnzCkh8J58KEzANlI5WOtRQ/videos">
+                  <img src="assets/images/pics/youtube-logo-5-2.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
+
+
+    <!-- SCRIPTS -->
+    <script>
+      $(document).ready(function () {
+        $('.slider1').bxSlider({
+          mode: 'fade',
+        });
+        $('.slider2').bxSlider({
+          mode: 'fade',
+        });
+        $('.slider3').bxSlider({
+          mode: 'fade',
+        });
+      });
+    </script>
 </body>
 
 </html>
